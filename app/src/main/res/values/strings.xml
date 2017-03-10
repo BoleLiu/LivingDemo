@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BoBoyo</string>
+    <string name="publish_url">请输入推流地址：</string>
+    <string name="encode_method">请选择编码方式：</string>
+    <string name="sw_codec">软编</string>
+    <string name="hw_codec">硬编</string>
+    <string name="start_publish">START</string>
+</resources>
