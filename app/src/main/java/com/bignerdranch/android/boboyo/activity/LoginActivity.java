@@ -40,7 +40,6 @@ public class LoginActivity extends AppCompatActivity{
     private Button mLoginBtn;
     private CoordinatorLayout mCoordinatorLayout;
     private CollapsingToolbarLayout mToolbarLayout;
-    private AppBarLayout mAppBarLayout;
     private boolean mPermissionEnabled = false;
 
     private static boolean isSupportHWEncode() {

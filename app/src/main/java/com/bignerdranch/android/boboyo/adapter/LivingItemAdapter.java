@@ -25,12 +25,10 @@ public class LivingItemAdapter extends BaseAdapter{
     private LivingItemBean mLivingItemBean;
     private Activity activity;
 
-    private String test;
 
-    public LivingItemAdapter(Activity activity, List<LivingItemBean> dataList, String s) {
+    public LivingItemAdapter(Activity activity, List<LivingItemBean> dataList) {
         this.activity = activity;
         mList = dataList;
-        this.test = s;
     }
 
     @Override
@@ -53,7 +51,6 @@ public class LivingItemAdapter extends BaseAdapter{
         ViewHolder viewHolder = null;
         mLivingItemBean = mList.get(position);
         if (convertView == null) {
-            Log.d("liujingbo", TAG + "  " + test);
             convertView = activity.getLayoutInflater().inflate(R.layout.living_item_layout, parent, false);
             viewHolder = new ViewHolder();
             viewHolder.iconImage = (ImageView) convertView.findViewById(R.id.living_icon);

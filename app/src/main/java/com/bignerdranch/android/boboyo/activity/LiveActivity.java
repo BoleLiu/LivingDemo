@@ -85,15 +85,6 @@ public class LiveActivity extends FragmentActivity {
         Fragment fragment1 = new LivingFragment();
         Fragment fragment2 = new LivingFragment();
         Fragment fragment3 = new LivingFragment();
-        Bundle bundle1 = new Bundle();
-        Bundle bundle2 = new Bundle();
-        Bundle bundle3 = new Bundle();
-        bundle1.putCharSequence("flag", "1");
-        bundle2.putCharSequence("flag", "2");
-        bundle3.putCharSequence("flag", "3");
-        fragment1.setArguments(bundle1);
-        fragment2.setArguments(bundle2);
-        fragment3.setArguments(bundle3);
         mFragmentList.add(fragment1);
         mFragmentList.add(fragment2);
         mFragmentList.add(fragment3);
@@ -116,6 +107,7 @@ public class LiveActivity extends FragmentActivity {
                     case 0:
                         break;
                     case 1:
+
                         break;
                     case 2:
                         Intent intent = new Intent(LiveActivity.this, AboutMeActivity.class);
